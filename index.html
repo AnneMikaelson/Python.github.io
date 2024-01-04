@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Documentación técnica de Python</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>DOCUMENTACIÓN DE PYTHON</header>
+        <ul>
+            <li><a href="#Introduccion" class="nav-link">Introduccion</a></li>
+            <li><a href="#Variables" class="nav-link">Variables</a></li>
+            <li><a href="#Tipos_de_datos" class="nav-link">Tipos de datos</a></li>
+            <li><a href="#Operadores" class="nav-link">Operadores</a></li>
+            <li><a href="#Estructuras_de_control" class="nav-link">Estructuras de control</a></li>
+            <li><a href="#Funciones" class="nav-link">Funciones</a></li>
+            
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section id="Introduccion" class="main-section">
+            <header>Introduccion</header>
+            <p>Python es un lenguaje de programación interpretado, de alto nivel y de propósito general. Fue creado por
+                Guido van Rossum y se publicó por primera vez en 1991. Python tiene una sintaxis simple y clara que
+                facilita la lectura y escritura del código. Además, Python admite múltiples paradigmas de programación,
+                como el imperativo, el orientado a objetos, el funcional o el declarativo. Python también cuenta con una
+                amplia biblioteca estándar que ofrece una gran variedad de módulos y funciones para realizar diversas
+                tareas, como el procesamiento de texto, el manejo de archivos, las comunicaciones de red, el desarrollo
+                web, el análisis de datos, la inteligencia artificial o el aprendizaje automático.</p>
+            <p>El programa más simple en Python es el que imprime el mensaje "Hola, mundo" en la pantalla. Para ello,
+                solo hay que escribir la siguiente línea de código:</p>
+            <pre>
+                <code>
+                    1. print("Hola, mundo")
+                </code>
+            </pre>
+        </section>
+        <section id="Variables" class="main-section">
+            <header>Variables</header>
+            <p>En Python, una variable es un contenedor que almacena un valor.
+                Para declarar una variable en Python, no es necesario especificar
+                el tipo de dato. En cambio, Python determina automáticamente el tipo
+                de dato almacenado en la variable.</p>
+            <p>Por ejemplo, para declarar una variable llamada a y asignarle el valor
+                5, simplemente escribiríamos:</p>
+            <pre>
+                <code>
+                    1. a = 5
+                </code>
+            </pre>
+            <p>Luego, podemos imprimir el valor de la variable a en la consola
+                utilizando la función print:</p>
+            <pre>
+                <code>
+                    1. print(a)
+                </code>
+            </pre>
+            <p>En Python, existen varias maneras de asignar valores a variables,
+                como por ejemplo:</p>
+            <pre>
+                <code> 
+                    1. # Asignación directa
+                    2. a = 5
+                    3. # Asignación a través de una función
+                    4. b = sum([1, 2, 3])
+                    5. # Asignación a través de una operación aritmética
+                    6. c = a + b
+                    7. # Asignación a través de una operación lógica
+                    8. d = True and False
+                        
+                </code>
+            </pre>
+
+            <p>Además, en Python se pueden utilizar números enteros con signos negativos y se pueden incluir números
+                decimales en los flotantes. Por ejemplo:</p>
+            <pre>
+                <code> 
+                
+                    1. # Número entero positivo<
+                    2. a = 5
+                    3. # Número entero negativo
+                    4. b = -10
+                    5. # Número decimal
+                    6. c = 3.14
+                    7. # Número decimal negativo
+                    8. d = -9.81
+                
+                </code>
+            </pre>
+
+
+        </section>
+        <section id="Tipos_de_datos" class="main-section">
+            <header>Tipos de datos</header>
+            <p>Los tipos de dato básicos en python son los siguientes:</p>
+            <ul>
+                <li>Entero (int): Son números enteros sin signo, como 1, 2, 3, 1000, etc. Python admite enteros de
+                    tamaño
+                    arbitrario, solo limitados por la memoria disponible.</li>
+                <li>Flotante (float): Son números reales, que pueden tener una parte decimal. Los flotantes se utilizan
+                    para
+                    representar números reales que requieren una alta precisión. Por ejemplo, 3.14, 0.0001, 1000.1, etc.
+                </li>
+                <li>Cadena de caracteres (str): Son secuencias de caracteres, como 'Hola', '1234567890', 'ABC', 'a
+                    string
+                    with spaces', etc. En Python, las cadenas de caracteres se pueden crear usando comillas simples ('')
+                    o
+                    dobles ("").</li>
+                <li>Lista (list): Son estructuras de datos que pueden contener varios valores. Las listas se pueden
+                    modificar después de crearse, lo que las hace flexibles. Por ejemplo, [1, 2, 3, 4, 5], ['apple',
+                    'banana', 'cherry'], etc.</li>
+                <li>Tupla (tuple): Son estructuras de datos similares a las listas, pero inmutables. Es decir, no se
+                    pueden
+                    modificar después de crearse. Las tuplas se utilizan para almacenar datos que no cambiarán, como
+                    coordenadas (x, y, z), números de teléfono (código de país, número local), etc. Por ejemplo, (1, 2,
+                    3,
+                    4, 5), ('apple', 'banana', 'cherry'), etc.</li>
+                <li>Diccionario (dict): Son estructuras de datos que almacenan pares clave-valor. Son útiles para
+                    almacenar
+                    y organizar datos en pares clave-valor. Por ejemplo, {'nombre': '</li>
+
+            </ul>
+        </section>
+        <section id="Operadores" class="main-section">
+            <header>Operadores</header>
+            <p>En Python, hay varios operadores que realizan operaciones diferentes. Algunos de los operadores más
+                comunes en Python son:</p>
+            <ul>
+                <li>Operadores aritméticos: Estos operadores realizan operaciones matemáticas simples, como suma, resta,
+                    multiplicación y división. Por ejemplo:</li>
+            <pre>
+                <code> 
+                    1. a=5
+                    2. b=3
+                    3. mayor = a > b # mayor es igual a True
+                    4. menor = a < b  # menor es igual a False 
+                    5. igual = a == b  # igual es igual a False
+                    6. desigual = a != b  # desigual es igual a True
+                </code>
+            </pre>
+                <li>Operadores lógicos: Estos operadores se utilizan para combinar
+                    valores booleanos y realizar operaciones lógicas, como AND, OR y
+                    NOT. Por ejemplo:</li>
+
+            <pre>
+                <code> 
+                    1. a=True
+                    2. b=False
+                    3. and_operation = a and b #and_operacton es igual a False 
+                    4. or_operacion = a or b  #or_operacion es igual a True
+                    5. not_operacion = not a  # not_operacion es igual a False 
+                </code>
+            </pre>
+                <li>Operadores de asignación: Estos operadores se utilizan para
+                    asignar valores a variables. Por ejemplo:</li>
+            <pre>
+                <code> 
+                    1. a = 5
+                    2. b = 3
+                    3. a = a + b  # a es igual a 8
+                </code>
+            </pre>
+
+                <li>Operadores de comparación: Estos operadores se utilizan para
+                    comparar dos valores y devuelven un valor booleano (True o False).
+                    Por ejemplo:</li>
+
+            <pre>
+                <code> 
+                    1. a = 5
+                    2. b = 3
+                    3. mayor = a > b  # mayor es igual a True
+                    4. menor = a < b  # menor es igual a False
+                    5. igual = a == b  # igual es igual a False
+                    6. desigual = a != b  # desigual es igual a True
+                </code>
+            </pre>
+            </ul>
+        </section>
+        <section id="Estructuras_de_control" class="main-section">
+            <header>Estructuras de control</header>
+            <p>Las estructuras de control son formas en que el flujo del programa puede
+                ser alterado por las decisiones.</p>
+            <p>Python ofrece varias estructuras de control que se utilizan para
+                ejecutar bloques de código condicionalmente o repetidamente.
+                A continuación, se detallan las principales estructuras de control en
+                Python:</p>
+            <ul>
+                <li>if: Se utiliza para ejecutar un bloque de código si una
+                    condición específica se cumple. La sintaxis es
+                    la siguiente:</li>
+            <pre>
+                <code>
+                    1. if condition:
+                    2. # Bloque de código a ejecutar si la condición se cumple
+                </code>
+            </pre>
+
+                <li>elif: Se utiliza para agregar condiciones adicionales a una
+                    declaración if. El bloque de código asociado con elif se
+                    ejecutará si todas las condiciones previas sean falsas y
+                    la condición especificada en elif se cumpla. La sintaxis
+                    es la siguiente:</li>
+            <pre>
+                <code>
+                    1. if condition1:
+                    2. # Bloque de código a ejecutar si la condición 1 se cumple
+                    3. elif condition2:
+                    4. # Bloque de código a ejecutar si condition1 no se cumple pero condition2 se cumple
+                </code>
+            </pre>
+
+                <li>else: Se utiliza para especificar un bloque de código que
+                    se ejecutará si ninguna de las condiciones anteriores se
+                    cumple. La sintaxis es la siguiente:</li>
+            <pre>
+                <code>
+                    1. if condition1:
+                    2. # Bloque de código a ejecutar si la condición 1 se cumple
+                    3. elif condition2:
+                    4. # Bloque de código a ejecutar si condition1 no se cumple pero condition2 se cumple
+                    5. else: 
+                    6. # Bloque de código a ejecutar si ninguna de las condiciones anteriores se cumple
+                </code>
+            </pre>
+            </ul>
+
+        </section>
+        <section id="Funciones" class="main-section">
+            <header>Funciones</header>
+            <p>Las funciones en Python son bloques de código que pueden ser 
+                ejecutados en cualquier parte del programa. Se definen mediante la 
+                palabra clave "def" seguida del nombre de la función y los 
+                parámetros que la función recibe, entre paréntesis.</p>
+            <p>Las funciones en Python son de dos tipos: funciones integradas, 
+                como print(), input(), type(), etc., y funciones definidas por el 
+                usuario, que se crean utilizando la palabra clave "def".</p>
+            <p>Algunas características importantes de las funciones en Python son:</p>
+            <ol>
+                <li>Parámetros: Son los valores que la función recibe al ser llamada.
+                    Los parámetros pueden ser de dos tipos: obligatorios y 
+                    opcionales.</li>
+                <li>Argumentos: Son los valores reales que se pasan a la función 
+                    cuando se llama a la misma. Los argumentos se corresponden con 
+                    los parámetros de la función.</li>
+                <li>Valor de retorno: Es el valor que devuelve la función al 
+                    finalizar su ejecución. Este valor puede ser utilizado por el 
+                    código que llama a la función.</li>
+                <li>Palabra clave "return": Esta palabra clave se utiliza para 
+                    indicar que la función ha terminado su ejecución y que puede 
+                    devolver un valor a la función que la llamó.</li>
+            </ol>
+            <p>Aquí hay un ejemplo de cómo se define y utiliza una función en Python:</p>
+            <pre>
+                <code>
+                    1. def suma(a, b):
+                    2.     return a + b
+                    3. 
+                    4. resultado = suma(5, 10)
+                    5. print(resultado) #Muestra: 15
+                </code>
+            </pre>
+        </section>
+
+    </main>
+</body>
+
+</html>
